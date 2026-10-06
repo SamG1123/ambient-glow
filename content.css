@@ -1,0 +1,12 @@
+html.ag-on #player-container-outer,
+html.ag-on #player-container-inner,
+html.ag-on #player-container,
+html.ag-on #player,
+html.ag-on #player-theater-container,
+html.ag-on ytd-player,
+html.ag-on #ytd-player { overflow: visible !important; }
+html.ag-on #movie_player { background: transparent; }
+#ag-canvas {
+  position: absolute; pointer-events: none; z-index: -1;
+  transition: opacity .4s; will-change: transform;
+}

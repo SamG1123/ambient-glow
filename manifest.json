@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Ambient Glow for YouTube",
+  "version": "1.0.0",
+  "description": "Casts a color-matched ambient glow around the YouTube player.",
+  "permissions": ["storage"],
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }],
+  "action": { "default_popup": "popup.html", "default_icon": "icons/icon128.png" },
+  "icons": { "128": "icons/icon128.png" }
+}
